@@ -19,7 +19,7 @@ describe("Automação site Your Logo", () => {
         cy.get('.login').click()
         cy.get('#email_create').type(faker.internet.email())
         cy.get('#SubmitCreate > span').click()
-        cy.get('#id_gender1').check()
+        cy.get('#id_gender1').check().should('be.visible')
         cy.get('#customer_firstname').type(faker.name.firstName())
         cy.get('#customer_lastname').type(faker.name.lastName())
         cy.get('#email').should('be.visible')
