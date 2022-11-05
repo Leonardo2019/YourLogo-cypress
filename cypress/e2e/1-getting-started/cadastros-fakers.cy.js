@@ -1,6 +1,7 @@
 /// <reference types='cypress'/>
 
 import { faker } from '@faker-js/faker';
+//import para criar dados faker
 
 describe("Automação site Your Logo", () => {
     beforeEach(() => {
